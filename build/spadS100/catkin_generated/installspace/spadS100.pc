@@ -1,0 +1,8 @@
+prefix=/home/amir/catkin_ws/install
+
+Name: spadS100
+Description: Description of spadS100
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

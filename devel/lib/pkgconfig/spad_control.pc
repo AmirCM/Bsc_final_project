@@ -1,0 +1,8 @@
+prefix=/home/amir/catkin_ws/devel
+
+Name: spad_control
+Description: Description of spad_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

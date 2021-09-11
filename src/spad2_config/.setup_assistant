@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: spadS100
+    relative_path: urdf/spadS100.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/spadS100.srdf
+  CONFIG:
+    author_name: amir_ahb
+    author_email: amirbehzadfar.h@gmail.com
+    generated_timestamp: 1630872841

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="SpadBot.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.13644 0.052246 -0.085"
+        rpy="0 0 0" />
+      <mass
+        value="4.8827" />
+      <inertia
+        ixx="0.016015"
+        ixy="8.1203E-06"
+        ixz="-8.7572E-19"
+        iyy="0.041977"
+        iyz="3.8212E-19"
+        izz="0.034982" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SpadBot.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SpadBot.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.0243203705553357 0.0390507651237246 0.000484903036642115"
+        rpy="0 0 0" />
+      <mass
+        value="0.110864752282773" />
+      <inertia
+        ixx="4.13225088911993E-05"
+        ixy="-2.24588708974436E-05"
+        ixz="3.88360668267898E-07"
+        iyy="4.91046991813076E-05"
+        iyz="3.25817289151852E-07"
+        izz="6.37243974119548E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SpadBot.SLDASM/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SpadBot.SLDASM/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0.22 0.085 0.105"
+      rpy="1.5708 0 -0.20084" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.00366631668138395 -5.48172618408671E-16 -0.0311037249195734"
+        rpy="0 0 0" />
+      <mass
+        value="0.0232388450514006" />
+      <inertia
+        ixx="1.56558569465794E-05"
+        ixy="-2.11758236813575E-22"
+        ixz="2.19434472898067E-20"
+        iyy="1.41628383681306E-05"
+        iyz="1.3774211560233E-20"
+        izz="1.54925122183295E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SpadBot.SLDASM/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SpadBot.SLDASM/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.042174 0.054422 0"
+      rpy="2.3583 -1.5708 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.00147608976767599 3.40166930877239E-05 -0.0479998081825081"
+        rpy="0 0 0" />
+      <mass
+        value="0.15126532083963" />
+      <inertia
+        ixx="0.000115104213987638"
+        ixy="-3.22975273929434E-12"
+        ixz="1.58234760934082E-11"
+        iyy="0.00011954318212386"
+        iyz="2.64997184688065E-10"
+        izz="2.5576388057391E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SpadBot.SLDASM/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SpadBot.SLDASM/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.072"
+      rpy="0.74116 0 -3.1416" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="1.3963"
+      upper="5.5851"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="end_effector">
+    <inertial>
+      <origin
+        xyz="-0.00906682979360846 -0.00327570650914806 -0.107964060661424"
+        rpy="0 0 0" />
+      <mass
+        value="0.087922735868814" />
+      <inertia
+        ixx="4.29126286263124E-05"
+        ixy="-7.59899339563559E-08"
+        ixz="-6.50175946851487E-09"
+        iyy="4.56468575164681E-05"
+        iyz="1.11284384852086E-06"
+        izz="1.76238061209906E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SpadBot.SLDASM/meshes/end_effector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SpadBot.SLDASM/meshes/end_effector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ef_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.096"
+      rpy="-0.1975 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="end_effector" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="1.5708"
+      upper="4.7124"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

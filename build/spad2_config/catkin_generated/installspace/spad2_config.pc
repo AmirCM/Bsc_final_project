@@ -1,0 +1,8 @@
+prefix=/home/amir/catkin_ws/install
+
+Name: spad2_config
+Description: Description of spad2_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/amir/catkin_ws/install
+
+Name: SpadBot
+Description: Description of SpadBot
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
